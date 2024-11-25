@@ -1,0 +1,7 @@
+<div><label for="user_number">Enter a number</label></div>
+<%= form_with url: "/square_root/results?number=:number", method: :get, local: true do |form|%>
+    <%= text_field_tag :number, nil, placeholder: "What number do you want to take the square root of?" , id: "user_number"%>
+  <div>
+    <button type = "submit">Calculate square root</button>
+  </div>
+<% end %>

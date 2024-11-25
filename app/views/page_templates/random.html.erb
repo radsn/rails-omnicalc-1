@@ -1,0 +1,13 @@
+<%= form_with url: "/random/results", method: :get, local: true do %>
+  <div>
+    <label for="min">Minimum</label>
+    <%= text_field_tag :min, nil, placeholder: "E.g. 1.5", id: "min" %>
+  </div>
+  <div>
+    <label for="max">Maximum</label>
+    <%= text_field_tag :max, nil, placeholder: "E.g. 4.5", id: "max" %>
+  </div>
+  <div>
+    <button type = "submit">Pick random number</button>
+  </div>
+<% end %>

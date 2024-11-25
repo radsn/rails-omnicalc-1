@@ -1,0 +1,10 @@
+<h1>Payment Results</h1>
+<p>APR</p>
+<p><%= number_to_percentage(params[:number1], precision: 4) %></p>
+<p>Number of years</p>
+<p><%= params[:number2] %></p>
+<p>Principal</p>
+<p><%= number_to_currency(params[:number3]) %></p>
+<p>Payment</p>
+<p><%= number_to_currency(@monthly_payment) %></p>
+<%= link_to "Calculate another payment", "/payment/new" %>

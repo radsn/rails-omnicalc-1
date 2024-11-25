@@ -1,0 +1,7 @@
+<div><label for="user_number">Enter a number</label></div>
+<%= form_with url: "/square/results?number=:number", method: :get, local: true do |form|%>
+    <%= text_field_tag :number, nil, placeholder: "What number do you want to square?" %>
+  <div>
+    <%= submit_tag "Calculate square" %>
+  </div>
+<% end %>

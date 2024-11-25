@@ -1,0 +1,17 @@
+<%= form_with url: "/payment/results", method: :get, local: true do %>
+  <div>
+    <label for="apr">APR:</label>
+    <%= text_field_tag :number1, nil, placeholder: "E.g. 5.42", id: "apr" %>
+  </div>
+  <div>
+    <label for="years">Number of years:</label>
+    <%= text_field_tag :number2, nil, placeholder: "How many years to repay?", id: "years" %>
+  </div>
+  <div>
+    <label for="principal">Principal:</label>
+    <%= text_field_tag :number3, nil, placeholder: "How much principal", id: "principal" %>
+  </div>
+  <div>
+    <button type = "submit">Calculate monthly payment</button>
+  </div>
+<% end %>
